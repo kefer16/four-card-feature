@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+:root {
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+}
+$Red: hsl(0, 78%, 62%);
+$Cyan: hsl(180, 62%, 55%);
+$Orange: hsl(34, 97%, 64%);
+$Blue: hsl(212, 86%, 64%);
+$Very_Dark_Blue: hsl(234, 12%, 34%);
+$Grayish_Blue: hsl(229, 6%, 66%);
+$Very_Light_Gray: hsl(0, 0%, 98%);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.content {
+    width: 100%;
+    background-color: $Very_Light_Gray;
+}
+.features {
+    max-width: 375px;
+    padding: 4.5em 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+
+    @media only screen and (min-width: 1000px) {
+        max-width: 1440px;
+    }
+}
+
+.texts {
+    width: 90%;
+
+    margin: 0 auto;
+
+    @media only screen and (min-width: 1000px) {
+        max-width: 40%;
+    }
+    &__ligth {
+        color: $Very_Dark_Blue;
+        font-weight: 200;
+        text-align: center;
+        font-size: 1.8em;
+        @media only screen and (min-width: 1000px) {
+            font-size: 2.3em;
+        }
+    }
+    &__bold {
+        color: $Very_Dark_Blue;
+        font-weight: 600;
+        text-align: center;
+        font-size: 1.8em;
+        @media only screen and (min-width: 1000px) {
+            font-size: 2.3em;
+        }
+    }
+    &__description {
+        color: $Grayish_Blue;
+        margin-top: 20px;
+        text-align: center;
+        font-size: 1.1em;
+    }
+}
+
+.cards {
+    width: 90%;
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 1em;
+    margin: 0 auto;
+    padding: 5em 0;
+    @media only screen and (min-width: 1000px) {
+        width: 80%;
+        margin-top: 3em;
+        gap: 2em;
+        padding: 0;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    &__single {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        border-radius: 7px;
+        box-shadow: 0 0.5em 1em rgba($Very_Dark_Blue, 0.2);
+        background-color: $Very_Light_Gray;
+
+        @media only screen and (min-width: 1000px) {
+            width: 1fr;
+        }
+
+        &.one {
+            border-top: 4px solid $Cyan;
+
+            @media only screen and (min-width: 1000px) {
+                grid-column: 1 / span 2;
+                grid-row: 2 / span 2;
+            }
+        }
+        &.two {
+            border-top: 4px solid $Red;
+
+            @media only screen and (min-width: 1000px) {
+                grid-column: 3 / span 2;
+                grid-row: 1 / span 2;
+            }
+        }
+        &.three {
+            border-top: 4px solid $Orange;
+            @media only screen and (min-width: 1000px) {
+                grid-column: 3 / span 2;
+                grid-row: 3 / span 2;
+            }
+        }
+        &.four {
+            border-top: 4px solid $Blue;
+            @media only screen and (min-width: 1000px) {
+                grid-column: 5 / span 2;
+                grid-row: 2 / span 2;
+            }
+        }
+        &__title {
+            color: $Very_Dark_Blue;
+            font-weight: 600;
+        }
+
+        &__description {
+            color: $Grayish_Blue;
+            font-size: 0.9em;
+        }
+        &__image {
+            margin-top: 2em;
+            margin-left: auto;
+            width: 4em;
+            height: 4em;
+        }
+    }
+}
