@@ -1,0 +1,13 @@
+.attribution {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0.5em;
+    font-size: 0.8em;
+    text-align: center;
+    color: $Very_Dark_Blue;
+    background-color: rgba($Very_Light_Gray, 1);
+    & a {
+        color: $Orange;
+    }
+}

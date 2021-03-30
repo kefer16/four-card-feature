@@ -11,6 +11,7 @@
 }
 
 .content {
+  position: relative;
   width: 100%;
   background-color: #fafafa;
 }
@@ -28,6 +29,20 @@
   .features {
     max-width: 1440px;
   }
+}
+
+.attribution {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0.5em;
+  font-size: 0.8em;
+  text-align: center;
+  color: #4c4e61;
+  background-color: #fafafa;
+}
+.attribution a {
+  color: #fcaf4a;
 }
 
 .texts {
