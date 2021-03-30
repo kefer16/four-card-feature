@@ -49,9 +49,13 @@
   width: 90%;
   margin: 0 auto;
 }
+.texts.animation-on {
+  animation: 1s opacity-animation ease;
+}
 @media only screen and (min-width: 1000px) {
   .texts {
     max-width: 40%;
+    height: 174px;
   }
 }
 .texts__ligth {
@@ -90,6 +94,9 @@
   gap: 1em;
   margin: 0 auto;
   padding: 5em 0;
+}
+.cards.animation-on {
+  animation: 1s up-animation ease;
 }
 @media only screen and (min-width: 1000px) {
   .cards {
@@ -164,4 +171,20 @@
   margin-left: auto;
   width: 4em;
   height: 4em;
+}
+@keyframes up-animation {
+  from {
+    transform: translateY(200px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes opacity-animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
