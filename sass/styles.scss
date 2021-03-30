@@ -1,42 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
-:root {
-    font-size: 15px;
-    font-family: "Poppins", sans-serif;
-}
-$Red: hsl(0, 78%, 62%);
-$Cyan: hsl(180, 62%, 55%);
-$Orange: hsl(34, 97%, 64%);
-$Blue: hsl(212, 86%, 64%);
-$Very_Dark_Blue: hsl(234, 12%, 34%);
-$Grayish_Blue: hsl(229, 6%, 66%);
-$Very_Light_Gray: hsl(0, 0%, 98%);
+@import "./colors";
+@import "./root";
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.content {
-    width: 100%;
-    background-color: $Very_Light_Gray;
-}
-.features {
-    max-width: 375px;
-    padding: 4.5em 0;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 0 auto;
-
-    @media only screen and (min-width: 1000px) {
-        max-width: 1440px;
-    }
-}
 
 .texts {
     width: 90%;
-
     margin: 0 auto;
 
     @media only screen and (min-width: 1000px) {
